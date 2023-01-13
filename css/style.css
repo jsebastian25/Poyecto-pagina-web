@@ -1,0 +1,686 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER*/
+
+
+/*MENU*/
+.header{
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 0.5px 4px #dbd4d4;  
+    top:0px;
+    z-index: 100;
+}
+
+.navegacion{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    font-weight: 600;
+  
+
+} 
+
+.navegacion ul{
+    list-style:none;
+}
+
+
+.menu > li{
+    display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: silver;
+
+}
+
+.submenu{
+    position: absolute;
+    background-color: white;
+    display: none;
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    display: block;
+
+}
+
+.logo{
+
+}
+
+.logo__img{
+    width: 60px;
+}
+
+.buscar{
+     
+}
+
+.buscar__img{
+    width: 20px;
+}
+
+.main__inicio{
+    margin: 5.5% auto 10px;
+}
+
+.main__media{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+/*BARRA NAVEGACION*/
+
+.barra-nav{
+    margin: 5.5% auto 10px;
+}
+.barra__recorrido{
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.barra__recorrido ul img{
+    width: 10px;
+    vertical-align: middle;
+
+}
+.barra__recorrido ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+}
+
+.barra__recorrido ul li a:hover{
+    color: silver;
+}
+.barra__recorrido ul li:last-child a{
+    font-weight: 600;
+}
+
+/*BODY/SECCIÓN 1*/
+
+.div__contenido{
+    display: flex; 
+    padding: 20px 20px 20px 20px;  
+}
+
+.div__contenido-img{
+    width: 25%;
+    padding: .2em;
+    
+}
+
+.section__titulo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+
+/*BODY/SECCIÓN 2*/
+
+
+.novedades__texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    padding-top: 20px;  
+}
+
+
+.seccion__grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "producto__1 producto__2 producto__3"
+        "producto__1 producto__4 producto__5";
+    grid-gap: 1em;
+    padding: 20px 20px 20px 20px;
+     
+}
+
+
+.producto__1{
+    display: flex;   
+    grid-area: producto__1;
+    flex-direction: column;
+    
+}
+.producto__2{
+    display: flex;   
+    grid-area: producto__2;
+    flex-direction: column;
+   
+}
+.producto__3{
+    display: flex;   
+    grid-area: producto__3;
+    flex-direction: column;
+  
+}
+
+.producto__4{
+    display: flex;   
+    grid-area: producto__4;
+    flex-direction: column;
+    
+}
+.producto__5{
+    display: flex;   
+    grid-area: producto__5;
+    flex-direction: column;
+}
+
+.producto__1 span{
+    display: block;
+}
+
+.seccion__img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.seccion__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.seccion__img:hover{
+    transform: scale(1.05);
+}
+
+.seccion__producto .marca{
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px ;
+    font-weight: 600;
+    
+}
+
+.seccion__producto span{
+    margin-top: .2em;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px ;
+    font-weight: 300;
+    display: block;
+
+}
+
+.seccion__producto1 .marca{
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px ;
+    font-weight: 600;
+    
+}
+.seccion__producto1 span{
+    margin-top: .2em;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px ;
+    font-weight: 300;
+    display: block;
+
+}
+.seccion__producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+/*SECCION-3*/
+
+.video{
+    display : flex;
+    padding: 20px 20px 20px 20px;
+}
+.seccion__video{
+    width: 50%;
+}
+
+.seccion-3{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+   
+}
+
+.seccion-3__img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.seccion-3__img:hover{
+    transform: scale(1.05);
+
+}
+
+
+/*BODY/FOOTER*/
+
+.footer{
+    background-color: #f2f2f2;
+    font-size: 16px;
+    
+}
+/*FOOTER/SUBSCRIPCION*/
+
+.sub{
+    display: flex;
+    justify-content:center;
+    align-items: baseline;
+    font-weight: 600;
+    padding-top:1em;
+}
+
+.sub p{
+    padding: 1em 3em;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.formulario__input {
+    padding: 0.5em 5em;
+    border: 1px solid black;
+    text-align: start;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    color: white;
+    background-color: black;
+}
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2em;
+    margin-left: 17em;   
+}
+
+.checkbox span{
+    padding-left: 1em;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 4em;
+   }
+   
+.redes__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -6em;
+    margin-top: 1em;
+}
+
+
+hr{
+
+    display: block;
+    margin: 1em;
+    size: 1px;
+    color: black;
+    
+}
+
+/*FOOTER/NOSOTROS*/
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-weight: 500;
+}
+.nosotros__logo{
+    padding: 2em;
+}
+.nosotros span{
+    display: block;
+    margin: 1em;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+/*.marca__copyright{
+    display: flex;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+
+
+/*PÁGINA MARCAS*/
+
+.marcas__banner{
+    margin-bottom: 20px;
+}
+.marcas__banner > img {
+    width: 100%;
+}
+
+.fila{
+    display: flex;
+    padding: 20px;
+    gap:20px;
+}
+
+.marcas__logo{
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1); 
+    position: relative;
+     
+}
+.marcas__img{
+    position: relative;
+    width:50%;
+    object-fit:fill;
+    transition-duration: 1s;
+}
+
+.marcas__logo:hover .marcas__img {
+    transform: translateX(-150px) ;
+}
+
+.marcas__texto{
+   display: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
+
+/*Intenté ocultar el texto con overflow:hidden pero no pude */
+
+.marcas__logo .marcas__texto span{
+    width: 40%;
+    text-align: justify;
+    transition-duration: 2s;
+
+}
+.marcas__logo:hover .marcas__texto > span{
+    transform: translateX(150px) ;
+}
+
+
+
+/*PÁGINA CONTACTO Y USUARIO*/
+
+.formulario__contacto{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.formulario__usuario{
+    width: 50%;
+}
+
+.formulario__general{
+   padding: 20px 70px 20px 70px;
+   
+}
+.formulario__info{
+    border:  2px solid black;
+}
+
+.formulario__texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario__texto a{
+    text-decoration: underline;
+}
+
+.formulario__info p{
+    margin-bottom: 20px;
+}
+
+.formulario__datos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.formulario__datos textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 16px ;
+    font-weight: 400;
+}
+.formulario__datos input{
+    border: 1px solid black;
+    padding: 12px 0px 12px 42px;
+    width: 100%;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 16px ;
+    font-weight: 400;
+    
+}
+.formulario__datos img{
+    position: absolute;
+    margin-left: 10px;
+    width: 15px ;
+    color: gainsboro;
+    
+}
+.formulario__privacidad{
+    border: 1px solid black;
+    padding: 12px 0px 12px 42px;
+    margin-bottom: 15px;
+} 
+.formulario__privacidad input{
+    margin-left: 10px;
+}
+
+.formulario__enviar input{
+    color: white;
+    background-color: black;
+    padding-right: 42px;
+}
+
+/*DESCUBRE*/
+
+.titulo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-areas: 
+        "contenedor__1 contenedor__2"
+        "contenedor__1 contenedor__3"
+        "contenedor__1 contenedor__4";
+    gap: 20px;
+    padding: 30px 20px 30px 20px;
+}
+
+.contenedor__1{
+    display: flex;
+    grid-area: contenedor__1;
+   
+}
+.contenedor__2{
+    display: flex;
+    grid-area: contenedor__2;
+    font-size: 50px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__3{
+    display: flex;
+    grid-area: contenedor__3;
+    text-align: justify;
+    line-height: 22px;
+    padding: 30px;
+}
+.contenedor__4{
+    display: flex;
+    grid-area: contenedor__4;
+    justify-content: space-evenly;
+}
+/*.contenedor__seccion{
+    display: flex;
+    gap: 10px;
+    padding: 30px 20px 30px 20px;
+}
+
+.contenedor__seccion > div> span{
+    display: block;
+    color: red;
+
+}*/
+
+
+/*
+@media screen and (max-width: 1024px){    
+}
+@media screen and (max-width: 768px){    
+}
+@media screen and (max-width: 320px){ 
+    .header{
+        display: flex;
+        width: 100%;
+       
+    }   
+    .navegacion{
+        font-size: 12px;
+      
+    }
+    .menu{
+        display: flex;
+    }
+    .item{
+        display: flex;
+        padding: 0px;
+    }
+    .menu>li>a{
+        padding: 0px;
+    }
+    .main{
+        margin-top: 20px;
+    }
+} */
+
+/*PÁGINA CALZADO HOMBRE*/
+
+
+.calzado__hombre{
+
+}
+.calzado__lista{
+    display: flex;
+    padding: 20px;
+    gap:8px;
+
+}
+.producto{
+    overflow: hidden;
+}
+
+.producto  img{
+    width: 100%;
+    display: block;
+    transition: transform .8s;
+    z-index: 200;
+}
+.producto:hover img{
+    transform: scale(1.1);
+}
+.producto__grid img{
+    width: 100%;
+}
+.zapatillas__grid{
+    display: grid;
+    
+
+}

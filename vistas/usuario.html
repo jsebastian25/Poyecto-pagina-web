@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../css/style.css">
+    <link rel="shortcut icon" href="../media/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Registro | Usuario</title>
+</head>
+<body>
+    <header class="header">   
+        <nav class="navegacion"> 
+            <div class="logo">
+                <a href="../index.html"><img class="logo__img" src="../media/logo.svg"  alt="OnYourWay" title="OnYourWay" ></a>        
+            </div> 
+            <ul class="menu">    
+                <li class="item"><a href="../vistas/descubre.html">Descubre</a></li>   
+                <li class="item"><a href="../vistas/calzado.html">Calzado</a>
+                    <ul class="submenu">    
+                        <li class="item"><a href="../vistas/marcas.html">Marcas</a></li>
+                        <li class="item"><a href="../vistas/calzado_hombre.html">Calzado Hombre</a></li>
+                        <li class="item"><a href="../vistas/calzado_mujer.html">Calzado Mujer</a></li>   
+                    </ul>
+                </li>     
+            </ul>      
+            <!-- <form class="buscar">
+                <label for="buscar"></label>
+                <input class="buscar__input" type="search" name="buscar" id="buscar" placeholder="Busca por producto, marca ...">
+            </form> -->
+            <div>
+                <img class="buscar__img"src="../media/icons/glass.svg" width="25px" alt="">
+                <img class="buscar__img" src="../media/icons/cart_shopping.svg" >
+                <a href="../vistas/usuario.html"><img class="buscar__img" src="../media/icons/user.svg"></a>
+            </div>   
+        </nav>
+    </header>
+    <section class="barra-nav">
+        <div class="barra__recorrido">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <img src="../media/icons/arrow-right.svg" alt="">
+                </li>
+                <li>
+                    <a href="#">Inicio de sesión</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main class="main">
+        <div class="formulario__contacto">
+            <form  class="formulario__usuario" action="#" method="get"  enctype="text/plain">
+            <fieldset class="formulario__info">
+                <div class="formulario__texto">
+                    <h2>INICIO DE SESIÓN</h2>  
+                </div>
+                <div class="formulario__general">
+                    <div class="formulario__datos">
+                        <img src="../media/icons/at_contact.svg" >
+                        <input type="email" name="email" id="email" placeholder="e-mail" required>
+                    </div>
+                    <div class="formulario__datos">
+                        <img src="../media/icons/lock-solid.svg" >             
+                        <input type="text" name="userName" id="userName" placeholder="password" pattern="[a-zA-Z]+" required >        
+                    </div>
+                    <div class="formulario__texto" >
+                        <a href="#">¿Olvidaste tu contraseña?</a> 
+                    </div>
+                    <div class="formulario__datos formulario__enviar">
+                        <input type="submit" value="INGRESAR">
+                    </div>
+                    <div class="formulario__texto" >
+                        <a href="#">¿Aún no tienes una cuenta? Crea una aquí</a> 
+                    </div>
+            </form>
+            </fieldset>
+        </div>    
+    </main>
+
+
+
+    <footer>
+        <header >
+                <nav class="footer">
+                    <div class="sub">    
+                        <div> 
+                            <p>HAS PARTE <br> DE NUESTRA <br> COMUNIDAD</p> 
+                        </div> 
+                        <form  class="formulario" action="#" method="get" enctype="text/plain"  >
+                            <label for="email"></label>
+                            <input class="formulario__input" type="email" name="email" id="email" placeholder="Ingresa tu email">
+                            <label for="enviar"></label>
+                            <input class="btn" type="button" id="enviar" value="Enviar">
+                        </form>
+                    </div>    
+                    <div class="checkbox">
+                        <input type="checkbox" name="terminos-y-condiciones" value="true" required>
+                        <span> Acepto el uso y almacenamiento de mis datos</span>
+                    </div>                      
+                    <div class="redes">
+                        <span>Nuestras redes sociales</span>
+                    </div>
+                    <div class="redes__img">
+                        <img class="img" src="../media/icons/facebook-f.svg" width="20px"  alt="facebook">
+                        <img class="img" src="../media/icons/instagram.svg"  width="20px" alt="instagram">
+                    </div>
+                    <hr>
+                    <div class="nosotros">
+                        <!-- <a class="nosotros__logo" href="./index.html"> <img src="./media/logo.svg" alt="OnYourWay" width="100px"> </a> -->
+                        <div class="cliente">
+                            <span>TIENDA</span>
+                            <span>Atencion al cliente</span>
+                        <span>FAQ</span> 
+                        </div>
+                        <div class="empresa">
+                            <span>EMPRESA</span>
+                            <span>On Your Way</span> 
+                            <a href="../vistas/contacto.html"> <span> Contáctanos </span></a>
+                        </div>
+                    </div>   
+                    <hr> 
+                    <div class="copyright">
+                        <span class="marca__copyright" > © 2022 - ON YOUR WAY</span>
+                    </div>
+                </nav>
+        </header>
+    </footer>
+</body>
+</html>
