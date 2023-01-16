@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +63,7 @@
                     <h2>CALZADO HOMBRE</h2>
                 </span>
             </div>
-            <div class="calzado__hombre">
+            <div class="calzado">
                 <div class="calzado__lista">
                     <div class="producto">
                         <img src="../media/calzado_hombre/adidas/ADIDAS 4D FUTURECRAFT.jpg" alt="ADIDAS">
@@ -99,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="calzado__hombre">
+            <div class="calzado">
                 <div class="calzado__lista">
                     <div class="producto">
                         <img src="../media/calzado_hombre/reebok/REEBOK ANSWER IV.jpg" alt="REEBOK">
@@ -137,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="calzado__hombre">
+            <div class="calzado">
                 <div class="calzado__lista">
                     <div class="producto">
                         <img src="../media/calzado_hombre/nike/AIR 1 MID SE DC7294-103.jpg" alt="NIKE">
@@ -174,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="calzado__hombre">
+            <div class="calzado">
                 <div class="calzado__lista">
                     <div class="producto">
                         <img src="../media/calzado_hombre/adidas/ADIDAS CASSINA PT.jpg" alt="ADIDAS">
@@ -211,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="calzado__hombre">
+            <div class="calzado">
                 <div class="calzado__lista">
                     <div class="producto">
                         <img src="../media/calzado_hombre/reebok/REEBOK CL LEGACY AZ.jpg" alt="REEBOK">
@@ -249,6 +251,23 @@
                 </div>
             </div>
         </section>
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">«</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">»</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
     </main>
 
 
@@ -259,9 +278,10 @@
     <footer>
         <nav class="footer">
             <div class="sub">
-                <div>
-                    <p>HAS PARTE <br> DE NUESTRA <br> COMUNIDAD</p>
+                <div class="sub__texto">
+                    <p>HAS PARTE  DE NUESTRA  COMUNIDAD</p>
                 </div>
+                <div>
                 <form class="formulario" action="#" method="get" enctype="text/plain">
                     <label for="email"></label>
                     <input class="formulario__input" type="email" name="email" id="email"
@@ -269,21 +289,22 @@
                     <label for="enviar"></label>
                     <input class="btn" type="button" id="enviar" value="Enviar">
                 </form>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="terminos-y-condiciones" value="true" required>
+                    <span> Acepto el uso y almacenamiento de mis datos</span>
+                </div>
+                <div class="redes">
+                    <span>Nuestras redes sociales</span>
+                </div>
+                <div class="redes__img">
+                    <a href="#"><img class="img" src="../media/icons/facebook-f.svg"  alt="facebook"></a>
+                    <a href="#"><img class="img" src="../media/icons/instagram.svg"  alt="instagram"></a>
+                </div>
             </div>
-            <div class="checkbox">
-                <input type="checkbox" name="terminos-y-condiciones" value="true" required>
-                <span> Acepto el uso y almacenamiento de mis datos</span>
-            </div>
-            <div class="redes">
-                <span>Nuestras redes sociales</span>
-            </div>
-            <div class="redes__img">
-                <img class="img" src="../media/icons/facebook-f.svg" width="20px" alt="facebook">
-                <img class="img" src="../media/icons/instagram.svg" width="20px" alt="instagram">
-            </div>
+           
             <hr>
             <div class="nosotros">
-                <!-- <a class="nosotros__logo" href="./index.html"> <img src="./media/logo.svg" alt="OnYourWay" width="100px"> </a> -->
                 <div class="cliente">
                     <span>TIENDA</span>
                     <span>Atencion al cliente</span>
@@ -301,6 +322,9 @@
             </div>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

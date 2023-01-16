@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +17,23 @@
 
 <body>
     <header class="header">
+        <div class="confirmacion">
+            <input type="checkbox" id="toggle">
+        </div>
         <nav class="navegacion">
+            <label class="hamburger" for="toggle">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </label>  
             <div class="logo">
                 <a href="./index.html"><img class="logo__img" src="./media/logo.svg" alt="OnYourWay"
                         title="OnYourWay"></a>
             </div>
+           
             <ul class="menu">
                 <li class="item"><a href="./vistas/descubre.html">Descubre</a></li>
-                <li class="item"><a href="./vistas/calzado.html">Calzado</a>
+                <li class="item"><a href="#">Calzado</a>
                     <ul class="submenu">
                         <li class="item"><a href="./vistas/marcas.html">Marcas</a></li>
                         <li class="item"><a href="./vistas/calzado_hombre.html">Calzado Hombre</a></li>
@@ -43,21 +54,38 @@
         </nav>
     </header>
     <main>
+           <div class="animacion">
+            <p>Let's</p>
+            <ul>
+                <li>go</li>
+                <li>try</li>
+                <li>do it</li>
+            </ul>
+        </div> 
+
         <div class="main__inicio">
             <img class="main__media" src="./media/inicio/portada_1.jpg" alt="">
         </div>
 
-        <section class="section">
+          <section class="section">
             <div class="section__titulo">
                 <span>
                     <h2>EXPLORA</h2>
                 </span>
             </div>
-            <div class="div__contenido">
-                <img class="div__contenido-img" src="./media/inicio/adidas.jpg" alt="zapatillas_adidas">
-                <img class="div__contenido-img" src="./media/inicio/rebook.jpg" alt="zapatillas_reebok">
-                <img class="div__contenido-img" src="./media/inicio/adidas1.jpg" alt="zapatillas_adidas">
-                <img class="div__contenido-img" src="./media/inicio/rebook1.jpg" alt="zapatillas_reebok">
+           <div class="div__contenido">
+                <div class="div__contenido--respon" >
+                    <img class="div__contenido-img" src="./media/inicio/adidas.jpg" alt="zapatillas_adidas">
+                </div>
+                <div class="div__contenido--respon" >
+                    <img class="div__contenido-img" src="./media/inicio/rebook.jpg" alt="zapatillas_reebok">
+                </div>
+                <div class="div__contenido--respon" >
+                    <img class="div__contenido-img" src="./media/inicio/adidas1.jpg" alt="zapatillas_adidas">
+                </div>
+                <div class="div__contenido--respon" >
+                    <img class="div__contenido-img" src="./media/inicio/rebook1.jpg" alt="zapatillas_reebok">
+                </div>        
             </div>
         </section>
         <div class="section__titulo">
@@ -119,7 +147,8 @@
 
 
         </section>
-        <section>
+        <section>    <!--
+
             <div class="seccion-3">
                 <div>
                     <img class="seccion-3__img"
@@ -161,9 +190,10 @@
     <footer>
         <nav class="footer">
             <div class="sub">
-                <div>
-                    <p>HAS PARTE <br> DE NUESTRA <br> COMUNIDAD</p>
+                <div class="sub__texto">
+                    <p>HAS PARTE  DE NUESTRA  COMUNIDAD</p>
                 </div>
+                <div>
                 <form class="formulario" action="#" method="get" enctype="text/plain">
                     <label for="email"></label>
                     <input class="formulario__input" type="email" name="email" id="email"
@@ -171,21 +201,22 @@
                     <label for="enviar"></label>
                     <input class="btn" type="button" id="enviar" value="Enviar">
                 </form>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="terminos-y-condiciones" value="true" required>
+                    <span> Acepto el uso y almacenamiento de mis datos</span>
+                </div>
+                <div class="redes">
+                    <span>Nuestras redes sociales</span>
+                </div>
+                <div class="redes__img">
+                    <a href="#"><img class="img" src="./media/icons/facebook-f.svg"  alt="facebook"></a>
+                    <a href="#"><img class="img" src="./media/icons/instagram.svg"  alt="instagram"></a>
+                </div>
             </div>
-            <div class="checkbox">
-                <input type="checkbox" name="terminos-y-condiciones" value="true" required>
-                <span> Acepto el uso y almacenamiento de mis datos</span>
-            </div>
-            <div class="redes">
-                <span>Nuestras redes sociales</span>
-            </div>
-            <div class="redes__img">
-                <img class="img" src="./media/icons/facebook-f.svg" width="20px" alt="facebook">
-                <img class="img" src="./media/icons/instagram.svg" width="20px" alt="instagram">
-            </div>
+           
             <hr>
             <div class="nosotros">
-                <!-- <a class="nosotros__logo" href="./index.html"> <img src="./media/logo.svg" alt="OnYourWay" width="100px"> </a> -->
                 <div class="cliente">
                     <span>TIENDA</span>
                     <span>Atencion al cliente</span>
@@ -203,6 +234,12 @@
             </div>
         </nav>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
