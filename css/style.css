@@ -70,6 +70,10 @@ a {
     list-style: none;
 }
 
+.menu{
+    margin: 0;
+    padding: 0;
+}
 
 .menu>li {
     display: inline-block;
@@ -84,6 +88,11 @@ a {
 .menu li a:hover {
     color: silver;
 
+}
+
+ul.menu {
+    display: flex;
+    align-items: center;
 }
 
 .submenu {
