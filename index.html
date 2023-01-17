@@ -17,23 +17,27 @@
 
 <body>
     <header class="header">
-        <div class="confirmacion">
-            <input type="checkbox" id="toggle">
-        </div>
+        
+        
         <nav class="navegacion">
+        
             <label class="hamburger" for="toggle">
                 <span class="linea"></span>
                 <span class="linea"></span>
                 <span class="linea"></span>
-            </label>  
+            </label> 
             <div class="logo">
                 <a href="./index.html"><img class="logo__img" src="./media/logo.svg" alt="OnYourWay"
                         title="OnYourWay"></a>
             </div>
-           
+            <input type="checkbox" id="toggle" class="confirmacion">
             <ul class="menu">
                 <li class="item"><a href="./vistas/descubre.html">Descubre</a></li>
-                <li class="item"><a href="#">Calzado</a>
+                
+                <label for="submenu1">
+                <li class="item" ><a for="submenu1">Calzado</a>
+                </label>
+                    <input type="checkbox" id="submenu1" class="confirmacion1">
                     <ul class="submenu">
                         <li class="item"><a href="./vistas/marcas.html">Marcas</a></li>
                         <li class="item"><a href="./vistas/calzado_hombre.html">Calzado Hombre</a></li>
@@ -46,7 +50,7 @@
                 <label for="buscar"></label>
                 <input class="buscar__input" type="search" name="buscar" id="buscar" placeholder="Busca por producto, marca ...">
             </form> -->
-            <div>
+            <div class="barra__buscar">
                 <img class="buscar__img" src="./media/icons/glass.svg" width="25px" alt="">
                 <img class="buscar__img" src="./media/icons/cart_shopping.svg">
                 <a href="./vistas/usuario.html"><img class="buscar__img" src="./media/icons/user.svg"></a>
@@ -74,16 +78,16 @@
                 </span>
             </div>
            <div class="div__contenido">
-                <div class="div__contenido--respon" >
+                <div class="div__contenido--respon" data-aos="zoom-in-up" >
                     <img class="div__contenido-img" src="./media/inicio/adidas.jpg" alt="zapatillas_adidas">
                 </div>
-                <div class="div__contenido--respon" >
+                <div class="div__contenido--respon" data-aos="zoom-in-up" >
                     <img class="div__contenido-img" src="./media/inicio/rebook.jpg" alt="zapatillas_reebok">
                 </div>
-                <div class="div__contenido--respon" >
+                <div class="div__contenido--respon" data-aos="zoom-in-up">
                     <img class="div__contenido-img" src="./media/inicio/adidas1.jpg" alt="zapatillas_adidas">
                 </div>
-                <div class="div__contenido--respon" >
+                <div class="div__contenido--respon" data-aos="zoom-in-up">
                     <img class="div__contenido-img" src="./media/inicio/rebook1.jpg" alt="zapatillas_reebok">
                 </div>        
             </div>
@@ -147,7 +151,7 @@
 
 
         </section>
-        <section>    <!--
+        <section>    
 
             <div class="seccion-3">
                 <div>
@@ -187,14 +191,14 @@
             </div>
         </section>
     </main>
-    <footer>
+   <footer>
         <nav class="footer">
             <div class="sub">
-                <div class="sub__texto">
+                <div class="sub__texto" data-aos="fade-up">
                     <p>HAS PARTE  DE NUESTRA  COMUNIDAD</p>
                 </div>
                 <div>
-                <form class="formulario" action="#" method="get" enctype="text/plain">
+             <form class="formulario" action="#" method="get" enctype="text/plain">
                     <label for="email"></label>
                     <input class="formulario__input" type="email" name="email" id="email"
                         placeholder="Ingresa tu email">
@@ -202,7 +206,7 @@
                     <input class="btn" type="button" id="enviar" value="Enviar">
                 </form>
                 </div>
-                <div class="checkbox">
+                  <div class="checkbox">
                     <input type="checkbox" name="terminos-y-condiciones" value="true" required>
                     <span> Acepto el uso y almacenamiento de mis datos</span>
                 </div>
@@ -215,7 +219,7 @@
                 </div>
             </div>
            
-            <hr>
+          <hr>
             <div class="nosotros">
                 <div class="cliente">
                     <span>TIENDA</span>
@@ -229,7 +233,7 @@
                 </div>
             </div>
             <hr>
-            <div class="copyright">
+           <div class="copyright">
                 <span class="marca__copyright"> © 2022 - ON YOUR WAY</span>
             </div>
         </nav>

@@ -10,30 +10,45 @@
     <title>Registro | Usuario</title>
 </head>
 <body>
-    <header class="header">   
-        <nav class="navegacion"> 
+    <header class="header">
+        
+        
+        <nav class="navegacion">
+        
+            <label class="hamburger" for="toggle">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </label> 
             <div class="logo">
-                <a href="../index.html"><img class="logo__img" src="../media/logo.svg"  alt="OnYourWay" title="OnYourWay" ></a>        
-            </div> 
-            <ul class="menu">    
-                <li class="item"><a href="../vistas/descubre.html">Descubre</a></li>   
-                <li class="item"><a href="../vistas/calzado.html">Calzado</a>
-                    <ul class="submenu">    
+                <a href="../index.html"><img class="logo__img" src="../media/logo.svg" alt="OnYourWay"
+                        title="OnYourWay"></a>
+            </div>
+            <input type="checkbox" id="toggle" class="confirmacion">
+            <ul class="menu">
+                <li class="item"><a href="../vistas/descubre.html">Descubre</a></li>
+                
+                <label for="submenu1">
+                <li class="item" ><a for="submenu1">Calzado</a>
+                </label>
+                    <input type="checkbox" id="submenu1" class="confirmacion1">
+                    <ul class="submenu">
                         <li class="item"><a href="../vistas/marcas.html">Marcas</a></li>
                         <li class="item"><a href="../vistas/calzado_hombre.html">Calzado Hombre</a></li>
-                        <li class="item"><a href="../vistas/calzado_mujer.html">Calzado Mujer</a></li>   
+                        <li class="item"><a href="../vistas/calzado_mujer.html">Calzado Mujer</a></li>
                     </ul>
-                </li>     
-            </ul>      
+                </li>
+            </ul>
+
             <!-- <form class="buscar">
                 <label for="buscar"></label>
                 <input class="buscar__input" type="search" name="buscar" id="buscar" placeholder="Busca por producto, marca ...">
             </form> -->
-            <div>
-                <img class="buscar__img"src="../media/icons/glass.svg" width="25px" alt="">
-                <img class="buscar__img" src="../media/icons/cart_shopping.svg" >
+            <div class="barra__buscar">
+                <img class="buscar__img" src="../media/icons/glass.svg" width="25px" alt="">
+                <img class="buscar__img" src="../media/icons/cart_shopping.svg">
                 <a href="../vistas/usuario.html"><img class="buscar__img" src="../media/icons/user.svg"></a>
-            </div>   
+            </div>
         </nav>
     </header>
     <section class="barra-nav">
