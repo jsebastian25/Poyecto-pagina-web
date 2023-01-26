@@ -1,0 +1,17 @@
+/* Seccion titulo*/
+
+$project-font:'Montserrat' sans-serif;
+
+@mixin titulo($arg-1:flex , $arg-2:center, $arg-3:center, $arg-4:30px, $arg-5:600 ){
+    display: $arg-1;
+    justify-content: $arg-2;
+    align-items: $arg-3;
+    font-size: $arg-4;
+    font-weight: $arg-5;
+}
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+/*PÁGINA CONTACTO Y USUARIO*/
+
+.formulario {
+    &__contacto{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    }   
+
+    &__usuario {
+        width: 50%;
+    }
+
+    &__general{
+        padding: 20px 70px 20px 70px; 
+    }
+
+    &__info{
+        border: 2px solid black;
+            p{
+                margin-bottom: 20px;
+            }
+    }
+
+    &__texto{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        a{
+            text-decoration: underline;
+        }
+
+    }
+
+    &__datos{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+
+            textarea{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid black;
+                font-family: 'Montserrat' sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            input{
+                border: 1px solid black;
+                padding: 12px 0px 12px 42px;
+                width: 100%;
+                font-family: 'Montserrat' sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            img{
+                position: absolute;
+                margin-left: 10px;
+                width: 15px;
+                color: gainsboro;
+            }
+    }
+}
+
+.formulario__privacidad {
+    border: 1px solid black;
+    padding: 12px 0px 12px 42px;
+    margin-bottom: 15px;
+
+    input{
+        margin-left: 10px; 
+    }
+}
+
+
+.formulario__enviar{
+    
+    input{
+        color: white;
+        background-color: black;
+        padding-right: 42px;
+    }
+}

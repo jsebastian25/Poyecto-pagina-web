@@ -1,0 +1,24 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@import "./parciales/vars";
+@import "./parciales/header";
+@import "./parciales/inicio";
+@import "./parciales/footer";
+@import "./parciales/descubre";
+@import "./parciales/marcas";
+@import "./parciales/calzado";
+@import "./parciales/formularios";
+@import "./parciales/responsive";
+
+

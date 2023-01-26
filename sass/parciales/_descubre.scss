@@ -1,0 +1,51 @@
+
+/*DESCUBRE*/
+
+.titulo  {
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "contenedor__1 contenedor__2"
+        "contenedor__1 contenedor__3"
+        "contenedor__1 contenedor__4";
+    gap: 20px;
+    padding: 30px 20px 30px 20px;
+
+    &__1{
+        display: flex;
+        grid-area: contenedor__1;    
+    }
+    &__2{
+        display: flex;
+        grid-area: contenedor__2;
+        font-size: 50px;
+        font-weight: 600;
+        justify-content: center;
+        align-items: center; 
+    }
+    &__3{
+        display: flex;
+        grid-area: contenedor__3;
+        text-align: justify;
+        line-height: 22px;
+        padding: 30px; 
+    }
+    &__4{
+        display: flex;
+        grid-area: contenedor__4;
+        justify-content: space-evenly;
+    }
+
+}

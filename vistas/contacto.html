@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,63 +69,64 @@
                 </ul>
             </div>
         </section>
-    
-        <div class="formulario__contacto">
-            <form action="#" method="get"  enctype="text/plain">
-            <fieldset class="formulario__info">
-                <div class="formulario__texto">
-                    <h2>CONTÁCTANOS</h2>  
-                </div>
-                <div class="formulario__general">
-                    <P>Si tienes alguna consulta, no dudes en completar el siguiente formulario, estaremos respondiendo en el menor tiempo posible.</P>
-                    <div class="formulario__datos">
-                        <img src="../media/icons/user_contact.svg" >             
-                        <input type="text" name="userName" id="userName" placeholder="Ingresa tu nombre" pattern="[a-zA-Z]+" required >        
+        <section class="formulario">
+            <div class="formulario__contacto">
+                <form action="#" method="get"  enctype="text/plain">
+                <fieldset class="formulario__info">
+                    <div class="formulario__texto">
+                        <h2>CONTÁCTANOS</h2>  
                     </div>
-                    <div class="formulario__datos">
-                        <img src="../media/icons/at_contact.svg" >
-                        <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <div class="formulario__datos">
-                        <img src="../media/icons/phone_contact.svg" >
-                        <input type="text" name="number" id="number" placeholder="Ingresa tu teléfono/celular" pattern="[0-9]+" required>
-                    </div>
-                    <div class="formulario__datos">
-                        <img src="../media/icons/envelope-solid.svg"  >
-                        <input type="text" name="subject" id="subject" placeholder="Escribe un asunto" required>
-                    </div>
-                    <div class="formulario__datos">
-                        <textarea name="message" id="message" cols="100 " rows="10"  placeholder="Deja aquí tu comentario" required></textarea>
-                    </div>
-                    <div class="formulario__datos">
-                        <input type="file" name="attach" id="attach">
-                    </div>
-                    <div class="formulario__privacidad"> 
-                        <span>Confirmo que he leído, entiendo y acepto la política de privacidad </span>
-                        <input type="radio" name="confirm" id="confirm" value="si" >
-                    </div>
-                    <div class="formulario__datos formulario__enviar">
-                        <input type="submit" value="ENVIAR">
-                    </div>
-                </div>    
-            </fieldset>
-            </form>
-        </div>
+                    <div class="formulario__general">
+                        <P>Si tienes alguna consulta, no dudes en completar el siguiente formulario, estaremos respondiendo en el menor tiempo posible.</P>
+                        <div class="formulario__datos">
+                            <img src="../media/icons/user_contact.svg" >             
+                            <input type="text" name="userName" id="userName" placeholder="Ingresa tu nombre" pattern="[a-zA-Z]+" required >        
+                        </div>
+                        <div class="formulario__datos">
+                            <img src="../media/icons/at_contact.svg" >
+                            <input type="email" name="email" id="email" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <div class="formulario__datos">
+                            <img src="../media/icons/phone_contact.svg" >
+                            <input type="text" name="number" id="number" placeholder="Ingresa tu teléfono/celular" pattern="[0-9]+" required>
+                        </div>
+                        <div class="formulario__datos">
+                            <img src="../media/icons/envelope-solid.svg"  >
+                            <input type="text" name="subject" id="subject" placeholder="Escribe un asunto" required>
+                        </div>
+                        <div class="formulario__datos">
+                            <textarea name="message" id="message" cols="100 " rows="10"  placeholder="Deja aquí tu comentario" required></textarea>
+                        </div>
+                        <div class="formulario__datos">
+                            <input type="file" name="attach" id="attach">
+                        </div>
+                        <div class="formulario__privacidad"> 
+                            <span>Confirmo que he leído, entiendo y acepto la política de privacidad </span>
+                            <input type="radio" name="confirm" id="confirm" value="si" >
+                        </div>
+                        <div class="formulario__datos formulario__enviar">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </div>    
+                </fieldset>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <nav class="footer">
             <div class="sub">
-                <div class="sub__texto">
-                    <p>HAS PARTE  DE NUESTRA  COMUNIDAD</p>
+                <div class="sub__texto" data-aos="fade-up">
+                    <p>HAS PARTE DE NUESTRA COMUNIDAD</p>
                 </div>
                 <div>
-                <form class="formulario" action="#" method="get" enctype="text/plain">
-                    <label for="email"></label>
-                    <input class="formulario__input" type="email" name="email" id="email"
-                        placeholder="Ingresa tu email">
-                    <label for="enviar"></label>
-                    <input class="btn" type="button" id="enviar" value="Enviar">
-                </form>
+                    <form class="formularioFooter" action="#" method="get" enctype="text/plain">
+                        <label for="email"></label>
+                        <input class="formularioFooter__input" type="email" name="email" id="email"
+                            placeholder="Ingresa tu email">
+                        <label for="enviar"></label>
+                        <input class="btn" type="button" id="enviar" value="Enviar">
+                    </form>
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="terminos-y-condiciones" value="true" required>
@@ -133,11 +136,11 @@
                     <span>Nuestras redes sociales</span>
                 </div>
                 <div class="redes__img">
-                    <a href="#"><img class="img" src="../media/icons/facebook-f.svg"  alt="facebook"></a>
-                    <a href="#"><img class="img" src="../media/icons/instagram.svg"  alt="instagram"></a>
+                    <a href="#"><img class="img" src="../media/icons/facebook-f.svg" alt="facebook"></a>
+                    <a href="#"><img class="img" src="../media/icons/instagram.svg" alt="instagram"></a>
                 </div>
             </div>
-           
+
             <hr>
             <div class="nosotros">
                 <div class="cliente">
@@ -157,5 +160,12 @@
             </div>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

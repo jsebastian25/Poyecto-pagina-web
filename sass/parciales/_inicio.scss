@@ -1,0 +1,136 @@
+/*BODY/SECCIÓN 1*/
+
+.div__contenido {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+
+    &-img {
+        width: 100%;
+        padding: .2em;
+    }
+}
+
+.section__titulo {
+    @include titulo();
+}
+
+.novedades__texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    padding-top: 20px;
+}
+
+
+.seccion_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "producto__1 producto__2 producto__3"
+        "producto__1 producto__4 producto__5";
+    grid-gap: 1em;
+    padding: 20px 20px 20px 20px;
+
+}
+
+@for $i from 1 through 5 {
+	.producto__#{$i}{
+	    display:flex;
+    	grid-area: producto__#{$i};
+    	flex-direction:column;
+	}
+}
+
+.producto__1 span {
+    display: block;
+}
+
+.seccion__img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.seccion__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+   
+}
+
+.seccion__img:hover {
+    transform: scale(1.05);
+}
+.seccion__producto .marca {
+    font-family: $project-font;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+.seccion__producto span {
+    margin-top: .2em;
+    font-family: $project-font;
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+
+}
+
+.seccion__producto1 .marca {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+.seccion__producto1 span {
+    margin-top: .2em;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+
+}
+
+.seccion__producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+
+/*SECCION-3*/
+
+.video {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+}
+
+.seccion__video {
+    width: 50%;
+}
+
+.seccion-3 {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+    &__img {
+        width: 100%;
+        padding-bottom: 20px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}

@@ -243,7 +243,7 @@ ul.menu {
 
 }
 
-.section__titulo h2 {
+.section__titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +266,7 @@ ul.menu {
 }
 
 
-.seccion__grid {
+.seccion_grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -331,6 +331,7 @@ ul.menu {
     align-items: center;
     width: 100%;
     padding-bottom: 20px;
+   
 }
 
 .seccion__img:hover {
@@ -431,14 +432,14 @@ ul.menu {
     font-size: 20px;
 }
 
-.formulario {
+.formularioFooter {
     display: flex;
     align-items: center;
     padding: 1em;
 
 }
 
-.formulario__input {
+.formularioFooter__input{
     padding: 0.5em 5em 0.5em 0.5em;
     border: 1px solid black;
     text-align: start;
@@ -453,23 +454,28 @@ ul.menu {
     padding: 0.5em 1em;
     margin-left: 1em;
     border: 1px solid black;
+    border-radius: 0px;
 
 }
 
-.checkbox .redes {
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+.checkbox span {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-
-}
-
-.checkbox span {
-    font-weight: 300;
 }
 
 .redes span {
-    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
 
 .img {
@@ -578,7 +584,6 @@ hr {
 
 
 /*PÁGINA CONTACTO Y USUARIO*/
-
 .formulario__contacto {
     display: flex;
     justify-content: center;
@@ -664,6 +669,7 @@ hr {
     background-color: black;
     padding-right: 42px;
 }
+
 
 /*DESCUBRE*/
 
@@ -982,7 +988,7 @@ hr {
         padding: 10px;
     }
 
-    .seccion__grid {
+    .seccion_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -1043,12 +1049,12 @@ hr {
         text-align: center;
         font-size: 18px;
     }
-    .formulario {
+    .formularioFooter {
       display: block;
     
     }
     
-    .formulario__input {
+    .formularioFooter__input {
         width: 100%;
         text-align: center;
         padding: 0.5em 5em 0.5em 5em;
@@ -1108,7 +1114,7 @@ hr {
         position: relative;
     }
 
-    .formulario__contacto{
+    .formulario{
         
         padding: 10px;
     }
@@ -1379,7 +1385,7 @@ hr {
         padding: 10px;
     }
 
-    .seccion__grid {
+    .seccion_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -1440,12 +1446,12 @@ hr {
         text-align: center;
         font-size: 18px;
     }
-    .formulario {
+    .formularioFooter {
       display: block;
     
     }
     
-    .formulario__input {
+    .formularioFooter__input {
         width: 100%;
         text-align: center;
         padding: 0.5em 5em 0.5em 5em;
