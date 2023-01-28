@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +13,7 @@
 <body>
     
     <header class="header">
-        
-        
         <nav class="navegacion">
-        
             <label class="hamburger" for="toggle">
                 <span class="linea"></span>
                 <span class="linea"></span>
@@ -26,24 +25,19 @@
             </div>
             <input type="checkbox" id="toggle" class="confirmacion">
             <ul class="menu">
-                <li class="item"><a href="../vistas/descubre.html">Descubre</a></li>
+                <li class="item"><a href="../vistas/descubre.html">DESCUBRE</a></li>
                 
                 <label for="submenu1">
-                <li class="item" ><a for="submenu1">Calzado</a>
+                <li class="item" ><a for="submenu1">CALZADO</a>
                 </label>
                     <input type="checkbox" id="submenu1" class="confirmacion1">
                     <ul class="submenu">
-                        <li class="item"><a href="../vistas/marcas.html">Marcas</a></li>
-                        <li class="item"><a href="../vistas/calzado_hombre.html">Calzado Hombre</a></li>
-                        <li class="item"><a href="../vistas/calzado_mujer.html">Calzado Mujer</a></li>
+                        <li class="item"><a href="../vistas/marcas.html">MARCAS</a></li>
+                        <li class="item"><a href="../vistas/calzado_hombre.html">CALZADO HOMBRE</a></li>
+                        <li class="item"><a href="../vistas/calzado_mujer.html">CALZADO MUJER</a></li>
                     </ul>
                 </li>
             </ul>
-
-            <!-- <form class="buscar">
-                <label for="buscar"></label>
-                <input class="buscar__input" type="search" name="buscar" id="buscar" placeholder="Busca por producto, marca ...">
-            </form> -->
             <div class="barra__buscar">
                 <img class="buscar__img" src="../media/icons/glass.svg" width="25px" alt="">
                 <img class="buscar__img" src="../media/icons/cart_shopping.svg">
@@ -51,75 +45,79 @@
             </div>
         </nav>
     </header>
-   
     <main class="main">
-        <section>
-            <div class="marcas__banner">
-                <img src="../media/inicio/marcas.jpg" alt="">
-            </div>
-            <div class="marcas-zapatillas">
-                <div>
-                    <h2 class="section__titulo">MARCAS</h2>
-                </div>
-                <div class="fila">
-                    <div class="marcas__logo" >   
-                        <img class="marcas__img" src="../media/marcas/adidas_marca.svg" alt="Marca" title="Adidas">
-                        <div class="marcas__texto">
-                            <span>El 18 de agosto de 1949, Adi Dassler fundó adidas con el deseo de ayudar a mejorar el rendimiento de los deportistas. Setenta años después, adidas no solo ha dejado huella en el deporte y en los atletas, sino también en la moda, la cultura, la sostenibilidad y en muchos otros ámbitos</span>
-                        </div>
-                    </div>
-                    <div class="marcas__logo" > 
-                        <img class="marcas__img" src="../media/marcas/nike_marcas.svg" alt="Marca" title="Nike">
-                        <div class="marcas__texto">
-                        <span>Fue en 1968 cuando Phil Knight funda la marca Nike, cuyo nombre se basaba en la diosa griega de la victoria «Niké». Pero no fue hasta 1971 cuando adoptó esta denominación. En sus 3 primeros años de existencia la marca se hacía llamar «Blue Ribbons Sports».</span>
-                        </div>
-                    </div>
-                </div>       
-                <div class="fila">    
-                    <div class="marcas__logo" >   
-                        <img class="marcas__img" src="../media/marcas/puma_marca.svg"  alt="Marca" title="Puma">
-                        <div class="marcas__texto">
-                            <span>PUMA, es una multinacional europea que diseña y fabrica calzado, indumentaria y accesorios deportivos y casuales, cuya sede principal está en Herzogenaurach, Bavaria</span>
-                        </div>
-                    </div>
-                    <div class="marcas__logo" >
-                        <img class="marcas__img" src="../media/marcas/vans_marca.svg"  alt="Marca" title="Vans" >
-                        <div class="marcas__texto">
-                            <span>El calzado comenzó a hacerse notorio entre los skaters del sur de California, y a medida que pasaban los años, la empresa que nació como una fábrica que vendía al público, se convirtió en Vans, una de las marcas más célebres del mundo urban.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="fila">         
-                    <div class="marcas__logo" >    
-                        <img class="marcas__img" src="..//media/marcas/reebok_marca.svg" alt="Marca" title="Reebok">
-                        <div class="marcas__texto">
-                            <span>La historia de Reebok se remonta a 1890 cuando Joseph William Foster empezó a fabricar zapatos para uso deportivo en un pequeño pueblo de Inglaterra. Con el paso del tiempo quiso innovar y crear productos de mayor calidad hasta que inventó el zapato para correr con clavos.</span>
-                        </div>
-                    </div>   
-                    <div class="marcas__logo" >    
-                        <img class="marcas__img" src="../media/marcas/converse_marca.svg" alt="Marca" title="Converse">
-                        <div class="marcas__texto">
-                            <span>Converse Rubber Shoe Company fue creado por Marquis Mills Converse en 1908 en Malden Massachusetts. En 1917, la compañía creo el primer calzado llamado All Star compuesto únicamente de caucho y lona. En su concepción fue diseñado para ser un calzado de élite en la liga profesional de baloncesto.</span>
-                        </div>
-                    </div>
-                </div>
+        <section class="barra-nav">
+            <div class="barra__recorrido">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <img src="../media/icons/arrow-right.svg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">Marcas</a>
+                    </li>
+                </ul>
             </div>
         </section>
+        <div class="brands">
+            <div class="brands__products">
+                <img src="../media/marcas/adidas_marca1-01.svg" alt="galeria" >
+                <img src="../media/calzado_hombre/adidas/ADIDAS SHANDBALL SPEZIAL.jpg" alt="galeria" >
+                <img src="../media/calzado_mujer/adidas/ADIDAS VALERANCE.jpg" alt="galeria">
+            </div>
+        </div>   
+        <div class="brands">
+            <div class="brands__products">
+                <img src="../media/marcas/converse_marca1-02.svg" alt="galeria" >
+                <img src="../media/calzado_hombre/converse/CONVERSE WEAPON CX.jpg" alt="galeria" >
+                <img src="../media/calzado_mujer/converse/CONVERSE RUN STAR MOTION.jpg" alt="galeria">
+            </div>
+        </div>  
+        <div class="brands">
+            <div class="brands__products">
+                <img src="../media/marcas/nike_marcas1-03.svg" alt="galeria" >
+                <img src="../media/calzado_hombre/nike/NIKE AIR PEGASUS 83 PREMIUM.jpg" alt="galeria" >
+                <img src="../media/calzado_mujer/nike/NIKE AIR HUARACHE SE.jpg" alt="galeria">
+            </div>
+        </div>  
+        <div class="brands">
+            <div class="brands__products">
+                <img src="../media/marcas/puma_marca1-04.svg" alt="galeria" >
+                <img src="../media/calzado_hombre/puma/PUMA XS 7000 OG.jpg" alt="galeria" >
+                <img src="../media/calzado_mujer/puma/PUMA SUEDE MAYU UP.jpg" alt="galeria">
+            </div>
+        </div>
+        <div class="brands">
+            <div class="brands__products">
+                <img src="../media/marcas/reebok_marca1-05.svg" alt="galeria" >
+                <img src="../media/calzado_hombre/reebok/REEBOK X KEITH HARING CLUB C LEGACY.jpg" alt="galeria" >
+                <img src="../media/calzado_mujer/reebok/REEBOK X POWER RANGERS INSTAPUMP FURY 94.jpg" alt="galeria">
+            </div>
+        </div> 
+        <div class="brands">
+            <div class="brands__products">
+                <img src="../media/marcas/vans_marca1-06.svg" alt="galeria" >
+                <img src="../media/calzado_hombre/vans/VANSMN SKATE SK8-HI.jpg" alt="galeria" >
+                <img src="../media/calzado_mujer/vans/VANSOLD SKOOL OVERT PLUS CC LUX1.jpg" alt="galeria">
+            </div>
+        </div>      
     </main>
     <footer>
         <nav class="footer">
             <div class="sub">
-                <div class="sub__texto">
-                    <p>HAS PARTE  DE NUESTRA  COMUNIDAD</p>
+                <div class="sub__texto" data-aos="fade-up">
+                    <p>HAS PARTE DE NUESTRA COMUNIDAD</p>
                 </div>
                 <div>
-                <form class="formulario" action="#" method="get" enctype="text/plain">
-                    <label for="email"></label>
-                    <input class="formulario__input" type="email" name="email" id="email"
-                        placeholder="Ingresa tu email">
-                    <label for="enviar"></label>
-                    <input class="btn" type="button" id="enviar" value="Enviar">
-                </form>
+                    <form class="formularioFooter" action="#" method="get" enctype="text/plain">
+                        <label for="email"></label>
+                        <input class="formularioFooter__input" type="email" name="email" id="email"
+                            placeholder="Ingresa tu email">
+                        <label for="enviar"></label>
+                        <input class="btn" type="button" id="enviar" value="Enviar">
+                    </form>
                 </div>
                 <div class="checkbox">
                     <input type="checkbox" name="terminos-y-condiciones" value="true" required>
@@ -129,11 +127,11 @@
                     <span>Nuestras redes sociales</span>
                 </div>
                 <div class="redes__img">
-                    <a href="#"><img class="img" src="../media/icons/facebook-f.svg"  alt="facebook"></a>
-                    <a href="#"><img class="img" src="../media/icons/instagram.svg"  alt="instagram"></a>
+                    <a href="#"><img class="img" src="../media/icons/facebook-f.svg" alt="facebook"></a>
+                    <a href="#"><img class="img" src="../media/icons/instagram.svg" alt="instagram"></a>
                 </div>
             </div>
-           
+
             <hr>
             <div class="nosotros">
                 <div class="cliente">
@@ -153,6 +151,10 @@
             </div>
         </nav>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

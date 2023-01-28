@@ -84,6 +84,10 @@ ul.menu {
 .barra__buscar {
   padding-right: 20px; }
 
+/*BARRA NAVEGACION*/
+.barra-nav {
+  margin: 5.5% auto 10px; }
+
 .barra__recorrido {
   padding: 20px;
   font-family: 'Montserrat', sans-serif;

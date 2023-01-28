@@ -81,7 +81,6 @@ a {
 
 .menu>li>a {
     display: block;
-    padding: 15px 20px;
     text-decoration: none;
 }
 
@@ -93,6 +92,7 @@ a {
 ul.menu {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
 .submenu {
@@ -379,7 +379,46 @@ ul.menu {
 }
 
 /*SECCION-3*/
+.galeria{
+    display: flex;
+}
 
+.galeria_inicio{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 530px;
+    padding: 20px;
+}
+.galeria_inicio img{
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.galeria_inicio img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+.galeria_texto{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.galeria_texto img{
+    width: 100%;
+}
+.galeria_texto p{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0%;
+  
+}
 .video {
     display: flex;
     padding: 20px 20px 20px 20px;
@@ -468,14 +507,14 @@ ul.menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .redes span {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .img {
@@ -519,24 +558,7 @@ hr {
     padding: 1.5em;
 }
 
-
-
-
 /*PÁGINA MARCAS*/
-
-.marcas__banner {
-    margin-bottom: 20px;
-}
-
-.marcas__banner>img {
-    width: 100%;
-}
-
-.fila {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-}
 
 .marcas__logo {
     display: flex;
@@ -548,39 +570,34 @@ hr {
 
 }
 
-.marcas__img {
-    position: relative;
-    width: 50%;
-    object-fit: fill;
-    transition-duration: 1s;
-}
-
-.marcas__logo:hover .marcas__img {
-    transform: translateX(-150px);
-}
-
-.marcas__texto {
-    position: absolute;
+.brands{
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
-/*Intenté ocultar el texto con overflow:hidden pero no pude */
 
-.marcas__logo .marcas__texto span {
-    width: 40%;
-    height: 100%;
-    text-align: justify;
-    transition-duration: 2s;
-
+.brands__products{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 390px;
+    padding: 20px;
 }
 
-.marcas__logo:hover .marcas__texto>span {
-    transform: translateX(150px);
+.brands__products img{
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    
 }
-
+.brands__products img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(110%);
+}
 
 
 /*PÁGINA CONTACTO Y USUARIO*/
@@ -691,7 +708,7 @@ hr {
         "contenedor__1 contenedor__3"
         "contenedor__1 contenedor__4";
     gap: 20px;
-    padding: 30px 20px 30px 20px;
+    padding: 30px;
 }
 
 .contenedor__1 {
@@ -714,7 +731,6 @@ hr {
     grid-area: contenedor__3;
     text-align: justify;
     line-height: 22px;
-    padding: 30px;
 }
 
 .contenedor__4 {
@@ -723,25 +739,42 @@ hr {
     justify-content: space-evenly;
 }
 
-/*.contenedor__seccion{
+.contenedor__seccion{
     display: flex;
+    flex-direction: column;
+    width: 100%;
     gap: 10px;
-    padding: 30px 20px 30px 20px;
 }
 
-.contenedor__seccion > div> span{
-    display: block;
-    color: red;
+.contenedor__seccion span{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+   
+}
+.contenedor__seccion p{
+    text-align: justify;
+    padding: 30px;
+}
 
-}*/
+.contenedor__seccion--media{
+    display: flex;
+    padding: 30px;
+    padding-top: 0px;
+    gap: 10px;
 
-
+}
+.contenedor__seccion--media img{
+    width: 40%;
+    
+}
+.contenedor__seccion--media video{
+    width:60%;
+}
 
 
 /*PÁGINA CALZADO HOMBRE Y MUJER*/
 
-
-.calzado {}
 
 .calzado__lista {
     display: flex;
@@ -794,406 +827,56 @@ hr {
 
 
 }
+@media screen and (max-width: 1024px){
 
-
-@media screen and (max-width: 768px) {
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-
-    }
-
-  .navegacion {
-        display: flex;
-        font-size: 12px;
-        gap: 60px;
-        width: 100%;
-
-    }
-
-    .logo{
-       display: flex;
-       align-self: center;
-    }
-
-    .logo__img {
-        width: 50px;
-
-    }
-    
-     .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 20px;
-        position: absolute;
-        background-color: #ffffff;
-        width: 100%;
-        height: 60%;
-        top: 58px;
-        left: 0px;
-        padding:10px;
-
-        z-index: -1;
-        transition: .6s;
-        transform: translateY(-120%);
-
-    }
-
-    .hamburger {
-        display: grid !important;
-    }
-
-    .hamburger {
-        display: none;
-        height: min-content;
-        cursor: pointer;
-        padding-top: 10px;
-    }
-
-    .linea {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25px;
-        height: 2px;
-        margin-bottom: 8px;
-        margin-left: 0px;
-        background: #000000;
-        transition: .4s;
-
-    }
-    .confirmacion {
-       display: none;
-    }
-    .confirmacion:checked ~ .menu{
-        transform: translateY(0);
-    }
-
-    .submenu{
-       
-        background-color: #ffffff;
-        z-index: 1;
-        transition: .6s;
-        transform: translateY(-130%);
-    }
-    .item input{
-        display: none;
-    }
-    .confirmacion1:checked ~ .submenu{
-        transform: translateY(0);
-    }
-
-
-    .item {
-        padding: 0px;
-    }
-
-    .menu>li>a {
-        padding: 0px;
-    }
-    .barra__buscar{
-        display: flex;
-        flex-direction: row;
-        gap:5px;
-        padding: 0;
-    }   
-
-    .barra__recorrido{
-        padding-top: 50px;
-    }
-    .barra__recorrido li{
-        font-size: 14px;
-    }
-    .animacion {
-        width: 100%;
-        font-size: 50%;
-    }
-
-    .main__media {
-        width: 100%;
-        margin-top: 45px;
-    }
 
     .animacion {
-        height: 30px;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        margin: 0;
-        margin-top: 90px;
-        padding-left: 30px;
-        font-size: 20px;
-        font-weight: 600;
-
-        overflow: hidden;
+        margin: 100px;
     }
-
-    @keyframes intro {
-        0% {
-            margin-top: 0px;
-        }
-
-        20% {
-            margin-top: 0px;
-        }
-
-        25% {
-            margin-top: -30px;
-        }
-
-        50% {
-            margin-top: -30px;
-        }
-
-        55% {
-            margin-top: -60px;
-        }
-
-        80% {
-            margin-top: -60px;
-        }
-
-        85% {
-            margin-top: -30px;
-        }
-
-        95% {
-            margin-top: -30px;
-        }
-
-        100% {
-            margin-top: 0px;
-        }
-
-    }
-
-    .section__titulo h2 {
-        font-size: 20px;
-    }
-
-    .div__contenido {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "div_contenido div_contenido "
-            "div_contenido div_contenido ";
-           
-        gap: 5px;
-        padding: 10px;
-    }
-
-    .seccion_grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "producto__1 producto__1 "
-            "producto__2 producto__3 "
-            "producto__4 producto__5 ";
-        grid-gap: 5px;
-        padding: 10px;
-    }
-    .novedades__texto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-    }
-    .novedades__texto p{
-        margin: 0%;
-    }
-    
-    .seccion__producto span {
-        font-size: 10px;
-    }
-    .seccion__img:hover {
-        transform: scale(1);
-    }
-    .video{
-        display: block;
-        padding: 10px;
-    }
-    .seccion__video{
-        width: 100%;
-    }
-    .seccion-3 {
-        display: grid;
-        padding: 10px;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    
-    }
-    
-    .seccion-3__img {
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    
-    .seccion-3__img:hover {
-        transform: scale(1);
-    }    
-    .seccion__producto1 span {
-        font-size: 10px;
-    }
-
-   
-    
-    .sub__texto p{
-        text-align: center;
-        font-size: 18px;
-    }
-    .formularioFooter {
-      display: block;
-    
-    }
-    
-    .formularioFooter__input {
-        width: 100%;
-        text-align: center;
-        padding: 0.5em 5em 0.5em 5em;
-    }
-    
-    .btn {
-        width: 100%;
-        margin-left: 0;
-    
-    }
-    .checkbox{
-        padding: 15px;
-    }
-    .checkbox span{
-        font-size: 15px;
-    }
-    .nosotros span{
-        font-size: 14px;
-    }
-
-/* RESPONSIVE PAGINA CALZADO HOMBRE Y MUJER*/
-
-.calzado__lista{
-        display: grid;
-        padding: 10px;
-        gap:5px;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows:1fr ;
-            
-    }
-/* RESPONSIVE CONTACTO y USUARIO*/
-    .formulario__info{
-        width: 100%;
-    }
-    .formulario__texto h2{
-        
-        font-size: 18px;
-    }
-    
-    .formulario__general{
-        padding: 10px;
-    }
-    .formulario__general p{
-        text-align: center;
-        font-size: 12px;
-    }
-    .formulario__datos input{
-        font-size: 12px;
-    }
-    .formulario__datos textarea{
-        font-size: 12px;
-    }
-    .formulario__privacidad span{
-        font-size: 12px;
-    }
-    .formulario__privacidad input{
-        position: relative;
-    }
-
-    .formulario{
-        
-        padding: 10px;
-    }
-    .formulario__usuario{
-        width: 100%;
-    }
-    
-    .formulario__texto a{
-        font-size: 12px;
-    }
-
     /*RESPONSIVE DESCUBRE*/
-    .contenedor{
-        width: 100%;
-        display: block;
-        padding: 0;
+    .contenedor {
+        display: inline-block;
+
     }
-    .contenedor__1 img{
-        width: 100%;
-        padding: 10px;
+    
+    .contenedor__1{
+        display: none;
     }
+    
     .contenedor__2 p{
-        font-size: 20px;
+        display: block;
+        font-size: 40px;
       
     }
-    .contenedor__3{
-        padding: 10px;
-    }
-    .contenedor__3 p{
-        font-size: 12px;
-    }
     .contenedor__4{
-        display: block;
+        display: flex;
+        gap:30px;
         width:  100%;
+        
     }
     .contenedor__4 iframe{
-        height: 500px;
-        padding: 10px;
+        height: 550px;
+        padding-top: 20px;
 
     } 
-    .contenedor__seccion div span{
-        font-size: 20px;
+    
+/*RESPONSIVE SECCION-3*/
+
+
+    
+    .galeria_texto p{
+        font-size: 60px;
+        text-align:right;
+        line-height: 60px;
         font-weight: 600;
-        text-align: center;
+        padding-top: 20px;
     }
-    .contenedor__seccion div img{
-        width: 100%;
-    }
-       /*MARCAS*/
-       .marcas__banner{
-        padding-top: 50px;
-       }
 
-    .fila{
-        
-        gap:10px;
-    }
-    .marcas__logo{
-        display: flex;
-        width: 100%;
-        padding: 0;
-    }
-    .marcas__img{
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin: 0;
-    }
-    .marcas__texto{
-        display: none;
-        transition-duration: 0s;
-    }
-    .marcas__logo:hover .marcas__img{
-        transform: translateX(0);
-    }
-   
-}
 
-  @media screen and (max-width: 320px) {
+}  
+
+@media screen and (max-width: 320px) ,(max-width: 768px) {
+    
     .header {
         display: flex;
         justify-content: center;
@@ -1228,39 +911,49 @@ hr {
         flex-direction: row;
         gap: 20px;
         position: absolute;
-        background-color: #ffffff;
+        background-color: #000000;
         width: 100%;
         height: 60%;
-        top: 58px;
+        top: 90vh;
         left: 0px;
         padding:10px;
-
         z-index: -1;
         transition: .6s;
-        transform: translateY(-120%);
+        transform: translateX(-120%);
 
     }
 
+    .menu .item a{
+        color: #ffffff;
+    }
+
+    .menu .submenu li a:hover {
+        color:#ffffff;
+    }
     .hamburger {
         display: grid !important;
     }
 
     .hamburger {
-        display: none;
+        display: flex;
+        gap: 5px;
         height: min-content;
         cursor: pointer;
-        padding-top: 10px;
+        position: absolute;
+        padding: 8px;
+        top: 90vh;
+        background-color:#000000;
     }
 
     .linea {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 25px;
+        width: 20px;
         height: 2px;
-        margin-bottom: 8px;
         margin-left: 0px;
-        background: #000000;
+        margin-bottom: 0%;
+        background: #ffffff;
         transition: .4s;
 
     }
@@ -1268,21 +961,29 @@ hr {
        display: none;
     }
     .confirmacion:checked ~ .menu{
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
     .submenu{
-       
+        width: 100%;
+        bottom: 100%;
+        padding: 0%;
         background-color: #ffffff;
         z-index: 1;
         transition: .6s;
-        transform: translateY(-130%);
+        transform: translateX(100%);
+    }
+    .submenu .item a{
+        color: #000000;
+    }
+    .submenu1 .item a{
+        color: #ffffff;
     }
     .item input{
         display: none;
     }
     .confirmacion1:checked ~ .submenu{
-        transform: translateY(0);
+        transform: translateX(0);
     }
 
 
@@ -1298,7 +999,9 @@ hr {
         flex-direction: row;
         gap:5px;
         padding: 0;
-    }   
+    } 
+    
+    /*RESPONSIVE BARRA NAVEGACION*/
 
     .barra__recorrido{
         padding-top: 50px;
@@ -1369,6 +1072,10 @@ hr {
 
     }
 
+
+
+/*RESPONSIVE BODY/SECCIÓN 1*/
+
     .section__titulo h2 {
         font-size: 20px;
     }
@@ -1396,6 +1103,8 @@ hr {
         grid-gap: 5px;
         padding: 10px;
     }
+/*RESPONSIVE BODY/SECCIÓN 2*/
+
     .novedades__texto{
         display: flex;
         justify-content: center;
@@ -1412,6 +1121,39 @@ hr {
     .seccion__img:hover {
         transform: scale(1);
     }
+
+
+
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .galeria_inicio{
+        width: 100%;
+        height: 330px;
+        padding: 10px;
+    }
+    .galeria_inicio img:hover{
+        width: 100px;    
+    
+    }
+    .galeria_texto{
+        padding:10px;
+    }
+
+    .galeria_texto img{
+        width: 100%;
+    }
+    
+    .galeria_texto p{
+        line-height: 40px;
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+
     .video{
         display: block;
         padding: 10px;
@@ -1440,7 +1182,7 @@ hr {
         font-size: 10px;
     }
 
-   
+   /*RESPONSIVE FOOTER/SUBSCRIPCION*/
     
     .sub__texto p{
         text-align: center;
@@ -1466,10 +1208,16 @@ hr {
         padding: 15px;
     }
     .checkbox span{
+        text-align: center;
         font-size: 15px;
+        font-weight: 300;
+    }
+    .redes span{
+        font-weight: 300;
     }
     .nosotros span{
         font-size: 14px;
+        font-weight: 400;
     }
 
 /* RESPONSIVE PAGINA CALZADO HOMBRE Y MUJER*/
@@ -1531,83 +1279,62 @@ hr {
     }
     .contenedor__1 img{
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
     .contenedor__2 p{
         font-size: 20px;
       
     }
     .contenedor__3{
-        padding: 10px;
+        padding: 20px;
     }
     .contenedor__3 p{
-        font-size: 12px;
+        font-size: 16px;
     }
     .contenedor__4{
-        display: block;
+        display: flex;
+        flex-direction: column;
         width:  100%;
+        
     }
     .contenedor__4 iframe{
         height: 500px;
-        padding: 10px;
-
+        padding: 20px;
     } 
-    .contenedor__seccion div span{
+    .contenedor__seccion span{
+        text-align: center;
         font-size: 20px;
         font-weight: 600;
-        text-align: center;
+        padding: 20px;
+     
     }
-    .contenedor__seccion div img{
-        width: 100%;
-    }
-       /*MARCAS*/
-       .marcas__banner{
-        padding-top: 50px;
-       }
 
-    .fila{
+    .contenedor__seccion--media{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 0px;
+        gap: 10px;
+    
+    }
+    .contenedor__seccion--media img{
+        width: 100%;
         
-        gap:10px;
     }
-    .marcas__logo{
-        display: flex;
+    .contenedor__seccion--media video{
+        width:100%;
+    }
+
+    /*MARCAS*/
+
+    .brands__products{
         width: 100%;
-        padding: 0;
+        height: 200px;
     }
-    .marcas__img{
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin: 0;
-    }
-    .marcas__texto{
-        display: none;
-        transition-duration: 0s;
-    }
-    .marcas__logo:hover .marcas__img{
-        transform: translateX(0);
+
+    .brands__products img:hover{
+        width: 200px;
     }
 }
 
-/*PÁGINA CALZADO MUJER
 
-.container-lg{
-    padding: 0px;
-    
-    
-
-}
-.row{
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-}
-.col-3{
-    
-}
-
-.col-3 img{
-    width: 120%;
-    height: auto;
-}
-*/

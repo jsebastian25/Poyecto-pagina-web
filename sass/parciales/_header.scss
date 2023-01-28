@@ -34,10 +34,7 @@
 }
 
 .logo__img {
-
     width: 60px;
-
-
 }
 
 @keyframes intro {
@@ -45,7 +42,6 @@
         justify-content: center;
         justify-items: center;
         width: 100%;
-
     }
 }
 
@@ -91,9 +87,14 @@ ul.menu {
 
 }
 
-.menu li:hover .submenu {
-    display: block;
-
+.menu{ 
+    li{
+        &:hover{
+            .submenu {
+                display: block;
+            }
+        }
+    }
 }
 .buscar__img {
     width: 20px;
@@ -101,6 +102,12 @@ ul.menu {
 
 .barra__buscar{
     padding-right: 20px;
+}
+
+/*BARRA NAVEGACION*/
+
+.barra-nav {
+    margin: 5.5% auto 10px;
 }
 
 .barra__recorrido {
