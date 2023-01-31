@@ -16,7 +16,7 @@
     }
 
     &__info{
-        border: 2px solid black;
+        border: 2px solid $project-color-black;
             p{
                 margin-bottom: 20px;
             }
@@ -43,14 +43,14 @@
             textarea{
                 width: 100%;
                 padding: 12px;
-                border: 1px solid black;
+                border: 1px solid $project-color-black;
                 font-family: 'Montserrat' sans-serif;
                 font-size: 16px;
                 font-weight: 400;
             }
 
             input{
-                border: 1px solid black;
+                border: 1px solid $project-color-black;
                 padding: 12px 0px 12px 42px;
                 width: 100%;
                 font-family: 'Montserrat' sans-serif;
@@ -68,7 +68,7 @@
 }
 
 .formulario__privacidad {
-    border: 1px solid black;
+    border: 1px solid $project-color-black;
     padding: 12px 0px 12px 42px;
     margin-bottom: 15px;
 
@@ -81,8 +81,8 @@
 .formulario__enviar{
     
     input{
-        color: white;
-        background-color: black;
+        color: $project-color-white;
+        background-color: $project-color-black;
         padding-right: 42px;
     }
 }

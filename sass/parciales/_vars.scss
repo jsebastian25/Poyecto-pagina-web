@@ -1,6 +1,11 @@
-/* Seccion titulo*/
 
 $project-font:'Montserrat' sans-serif;
+$project-background-footer:#f2f2f2;
+$project-font-size: 12px;
+$project-color-black: rgb(0, 0, 0);
+$project-color-white:#ffffff;
+
+
 
 @mixin titulo($arg-1:flex , $arg-2:center, $arg-3:center, $arg-4:30px, $arg-5:600 ){
     display: $arg-1;
@@ -10,7 +15,7 @@ $project-font:'Montserrat' sans-serif;
     font-weight: $arg-5;
 }
 
-
+/*En el parcial inicio implementé un ciclo for*/
 
 
 

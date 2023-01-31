@@ -560,16 +560,6 @@ hr {
 
 /*PÁGINA MARCAS*/
 
-.marcas__logo {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-
-}
-
 .brands{
     display: flex;
     justify-content: center;
@@ -905,6 +895,7 @@ hr {
     }
     
      .menu {
+        position: fixed;
         display: flex;
         justify-content: center;
         align-items: center;

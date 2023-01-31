@@ -8,7 +8,7 @@
 }
 
 .navegacion {
-    background-color: white;
+    background-color: $project-color-white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,10 +46,10 @@
 }
 
 
-.menu{
+.menu>{
     margin: 0;
     padding: 0;
-    li{
+    li>{
         display: inline-block;
    
         a{
@@ -73,9 +73,9 @@ ul.menu {
 
 .submenu {
     position: absolute;
-    background-color: white;
+    background-color: $project-color-white;
     display: none;
-    font-size: 12px;
+    font-size: $project-font-size;
     font-weight: 400;
         li{
             a{
@@ -112,7 +112,7 @@ ul.menu {
 
 .barra__recorrido {
     padding: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $project-font;
     font-size: 16px;
     ul{
         display: flex;

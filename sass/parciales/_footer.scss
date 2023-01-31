@@ -1,7 +1,7 @@
 /*BODY/FOOTER*/
 
 .footer {
-    background-color: #f2f2f2;
+    background-color:$project-background-footer;
     font-size: 16px;
 
 }
@@ -28,7 +28,7 @@
     padding: 1em;
     &__input{
         padding: 0.5em 5em 0.5em 0.5em;
-        border: 1px solid black;
+        border: 1px solid $project-color-black;
         text-align: start;
     }
 
@@ -39,7 +39,7 @@
     align-items: center;
     padding: 0.5em 1em;
     margin-left: 1em;
-    border: 1px solid black;
+    border: 1px solid $project-color-black;
     border-radius: 0px;
 
 }
@@ -69,7 +69,7 @@ hr {
     display: block;
     margin: 1em;
     size: 1px;
-    color: black;
+    color: $project-color-black;
 
 }
 

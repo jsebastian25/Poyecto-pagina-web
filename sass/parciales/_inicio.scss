@@ -14,6 +14,9 @@
     @include titulo();
 }
 
+
+/*BODY/SECCIÓN 2*/
+
 .novedades__texto {
     display: flex;
     justify-content: center;
@@ -84,7 +87,7 @@
 }
 
 .seccion__producto1 .marca {
-    font-family: 'Montserrat' sans-serif;
+    font-family: $project-font;
     font-size: 12px;
     font-weight: 600;
 
@@ -92,7 +95,7 @@
 
 .seccion__producto1 span {
     margin-top: .2em;
-    font-family: 'Montserrat' sans-serif;
+    font-family: $project-font;
     font-size: 12px;
     font-weight: 300;
     display: block;
@@ -109,6 +112,44 @@
 
 
 /*SECCION-3*/
+
+.galeria{
+    display: flex;
+    &_inicio{
+        display: flex;
+        justify-content: center;
+        width: 700px;
+        height: 530px;
+        padding: 20px;
+            img{
+                width: 0%;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .8;
+                transition: .5s ease;
+                    &:hover{
+                        cursor: crosshair;
+                        width: 300px;
+                        opacity: 1;
+                        filter: contrast(120%); 
+                    }
+            }
+    }
+    &_texto{
+        padding-top: 20px;
+        padding-right: 20px;
+            img{
+                width: 100%;
+            }
+            p{
+                font-size: 50px;
+                text-align: center;
+                font-weight: 300;
+                margin: 0%;
+              
+            }
+    }
+}
 
 .video {
     display: flex;
