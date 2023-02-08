@@ -48,16 +48,16 @@ a {
     justify-items: center;
     width: 100%; } }
 
-.menu > {
+.menu {
   margin: 0;
   padding: 0; }
-  .menu > li > {
+  .menu li > {
     display: inline-block; }
-    .menu > li > a {
+    .menu li > a {
       display: block;
       padding: 15px 20px;
       text-decoration: none; }
-      .menu > li > a:hover {
+      .menu li > a:hover {
         color: silver; }
 
 ul.menu {
@@ -81,15 +81,55 @@ ul.menu {
 .buscar__img {
   width: 20px; }
 
-.barra__buscar {
-  padding-right: 20px; }
+.barra__usuario {
+  display: flex;
+  align-items: center;
+  gap: 5px; }
+
+#check {
+  display: none; }
+
+.search-box {
+  display: none;
+  transition: all 0.5s ease-in-out; }
+  .search-box input {
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+    z-index: -150;
+    width: 60%;
+    height: 30px; }
+  .search-box label img {
+    position: absolute;
+    width: 20px;
+    top: 20%;
+    right: 50px;
+    height: 60%; }
+
+#check:checked ~ .search-box {
+  border: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 60%;
+  right: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 150;
+  transition: all 0.5s ease-in-out; }
 
 /*BARRA NAVEGACION*/
 .barra-nav {
   margin: 5.5% auto 10px; }
 
 .barra__recorrido {
-  padding: 20px;
+  position: relative;
+  padding: 20px 20px 0px;
   font-family: "Montserrat" sans-serif;
   font-size: 16px; }
   .barra__recorrido ul {
@@ -106,6 +146,15 @@ ul.menu {
       color: silver; }
     .barra__recorrido ul li:last-child a {
       font-weight: 600; }
+
+.filtro {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 20px;
+  gap: 10px;
+  border: none;
+  background-color: #ffffff; }
 
 .main__inicio {
   margin: 4% auto 10px; }
@@ -530,6 +579,10 @@ hr {
         width: 60%; }
 
 /*PÁGINA CALZADO HOMBRE Y MUJER*/
+.filtro {
+  padding-right: 50px;
+  padding-bottom: 20px; }
+
 .calzado__lista {
   display: flex;
   padding: 20px;
@@ -566,6 +619,76 @@ hr {
   color: black;
   border: none; }
 
+/*Pagina producto*/
+.section_info {
+  position: relative;
+  height: 100%;
+  display: flex; }
+  .section_info-description {
+    width: 50%; }
+
+.grid__contenedor {
+  width: 100%; }
+
+.grid__producto {
+  position: relative;
+  top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "grid__producto-1 grid__producto-1" "grid__producto-2 grid__producto-3" "grid__producto-4 grid__producto-5";
+  gap: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  right: 0%; }
+  .grid__producto img {
+    width: 100%; }
+  .grid__producto-1 {
+    grid-area: grid__producto-1;
+    display: flex;
+    justify-content: center; }
+    .grid__producto-1 img {
+      width: 100%; }
+  .grid__producto-2 {
+    grid-area: grid__producto-2; }
+  .grid__producto-3 {
+    grid-area: grid__producto-3; }
+  .grid__producto-4 {
+    grid-area: grid__producto-4; }
+  .grid__producto-5 {
+    grid-area: grid__producto-5; }
+
+.grid__producto-6 {
+  position: sticky;
+  top: 10%;
+  padding: 15px;
+  width: 100%; }
+  .grid__producto-6-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: 600; }
+  .grid__producto-6-description {
+    display: flex;
+    flex-direction: column; }
+
+.tallas {
+  margin-top: 20px; }
+  .tallas__seleccion {
+    border-radius: 0px; }
+
+.add {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 5px; }
+  .add__btn {
+    margin: 0px;
+    width: 100%; }
+  .add img {
+    width: 25px; }
+
 @media screen and (max-width: 1024px) {
   .menu {
     margin: 0%; }
@@ -597,6 +720,9 @@ hr {
     line-height: 60px;
     font-weight: 600;
     padding-top: 20px; } }
+
+.barra__recorrido {
+  padding-top: 50px; }
 
 @media screen and (max-width: 320px), (max-width: 768px) {
   .header {
@@ -681,15 +807,25 @@ hr {
   .menu > li > a {
     padding: 0px; }
   /*RESPONSIVE BARRA NAVEGACION*/
-  .barra__buscar {
+  .search-box input {
+    width: 100%;
+    height: 30px;
+    background: white;
+    height: 40px; }
+  #check:checked ~ .search-box {
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
     display: flex;
-    flex-direction: row;
-    gap: 5px;
-    padding: 0; }
+    align-items: center;
+    justify-content: center;
+    transform: translateY(60px); }
   .barra__recorrido {
     padding-top: 50px; }
-    .barra__recorrido li {
-      font-size: 14px; }
+    .barra__recorrido ul li {
+      font-size: 14x;
+      display: block; }
   .animacion {
     width: 100%;
     font-size: 50%; }
@@ -823,6 +959,21 @@ hr {
     gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr; }
+  /* RESPONSIVE PAGINA CALZADO HOMBRE Y MUJER*/
+  .section_info {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .grid__producto {
+    display: flex;
+    flex-direction: column; }
+  .grid__producto-6 {
+    top: 25%;
+    width: 200%; }
+    .grid__producto-6-name {
+      font-size: 15px;
+      font-weight: 600; }
   /* RESPONSIVE CONTACTO y USUARIO*/
   .formulario__info {
     width: 100%; }

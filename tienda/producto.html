@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="sneakers, usuario, tienda, On Your Way ">
-    <meta name="description" content="Inicia sesión o registrate y disfruta de lo último en calzado urbano.">
-    <!-- <link rel="stylesheet"  href="../css/style.css"> -->
+    <meta name="keywords" content="sneakers, calzado, tienda, On Your Way ">
+    <meta name="description" content="Venta online de sneakers exclusivas de las marcas urbanas más reconocidas mundialmente.">
+    <!-- <link rel="stylesheet" href="../css/style.css">  -->
     <link rel="stylesheet" href="../css/compilado.css">
     <link rel="shortcut icon" href="../media/logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
-    <title>usuario | OnYourWay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <title>On Your Way - Sneakers | Tienda</title>
 </head>
 <body>
     <header class="header">
@@ -21,7 +26,7 @@
                 <span class="linea"></span>
                 <span class="linea"></span>
                 <span class="linea"></span>
-            </label> 
+            </label>
             <div class="logo">
                 <a href="../index.html"><img class="logo__img" src="../media/logo.svg" alt="OnYourWay"
                         title="OnYourWay"></a>
@@ -29,16 +34,16 @@
             <input type="checkbox" id="toggle" class="confirmacion">
             <ul class="menu">
                 <li class="item"><a href="../tienda/descubre.html">DESCUBRE</a></li>
-                
+
                 <label for="submenu1">
-                <li class="item" ><a for="submenu1">CALZADO</a>
+                    <li class="item"><a for="submenu1">CALZADO</a>
                 </label>
-                    <input type="checkbox" id="submenu1" class="confirmacion1">
-                    <ul class="submenu">
-                        <li class="item"><a href="../tienda/marcas.html">MARCAS</a></li>
-                        <li class="item"><a href="../tienda/calzado_hombre.html">CALZADO HOMBRE</a></li>
-                        <li class="item"><a href="../tienda/calzado_mujer.html">CALZADO MUJER</a></li>
-                    </ul>
+                <input type="checkbox" id="submenu1" class="confirmacion1">
+                <ul class="submenu">
+                    <li class="item"><a href="../tienda/marcas.html">MARCAS</a></li>
+                    <li class="item"><a href="../tienda/calzado_hombre.html">CALZADO HOMBRE</a></li>
+                    <li class="item"><a href="../tienda/calzado_mujer.html">CALZADO MUJER</a></li>
+                </ul>
                 </li>
             </ul>
             <div class="barra__usuario">
@@ -55,6 +60,7 @@
                  <a href="../tienda/usuario.html"><img class="buscar__img" src="../media/icons/user.svg"></a>
              </div>
         </nav>
+        </nav>
     </header>
     <main class="main">
         <section class="barra-nav">
@@ -67,41 +73,67 @@
                         <img src="../media/icons/arrow-right.svg">
                     </li>
                     <li>
-                        <a href="#">Inicio de sesión</a>
+                        <a href="../tienda/calzado_hombre.html">Calzado hombre</a>
+                    </li>
+                    <li>
+                        <img src="../media/icons/arrow-right.svg">
+                    </li>
+                    <li>
+                        <span>ADIDAS 4D FUTURECRAFT </span>
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="formulario">
-            <div class="formulario__contacto">
-                <form  class="formulario__usuario" action="#" method="get"  enctype="text/plain">
-                <fieldset class="formulario__info">
-                    <div class="formulario__texto">
-                        <h2>INICIO DE SESIÓN</h2>  
+            <section class="section_info">
+                <div class="grid__contenedor">
+                    <div class="grid__producto">
+                        <div class="grid__producto-1">
+                            <img src="../media/producto/producto_1.jpg" alt="">
+                        </div>
+                        <div class="grid__producto-2">
+                            <img src="../media/producto/producto_2.jpg" alt="">
+                        </div>
+                        <div class="grid__producto-3">
+                            <img src="../media/producto/producto_3.jpg" alt="">
+                        </div>
+                        <div class="grid__producto-4">
+                            <img src="../media/producto/producto_4.jpg" alt="">
+                        </div>
+                        <div class="grid__producto-5">
+                            <img src="../media/producto/producto_5.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="formulario__general">
-                        <div class="formulario__datos">
-                            <img src="../media/icons/at_contact.svg" >
-                            <input type="email" name="email" id="email" placeholder="e-mail" required>
+                </div>    
+                <div class="section_info-description">
+                    <div class="grid__producto-6">
+                        <span>Running</span>
+                        <div class="grid__producto-6-name">
+                            <span>Adidas Originals</span>
+                            <span>4D FUTURECRAFT</span>
                         </div>
-                        <div class="formulario__datos">
-                            <img src="../media/icons/lock-solid.svg" >             
-                            <input type="text" name="userName" id="userName" placeholder="password" pattern="[a-zA-Z]+" required >        
+                        <div class="grid__producto-6-description" >
+                            <span>$ 110,00</span>
+                            <span>Core Black / Carbon / Core Black</span>
                         </div>
-                        <div class="formulario__texto" >
-                            <a href="#">¿Olvidaste tu contraseña?</a> 
-                        </div>
-                        <div class="formulario__datos formulario__enviar">
-                            <input type="submit" value="INGRESAR">
-                        </div>
-                        <div class="formulario__texto" >
-                            <a href="#">¿Aún no tienes una cuenta? Crea una aquí</a> 
-                        </div>
-                </form>
-                </fieldset>
-            </div>    
+                        <form class="tallas">
+                            <select class="form-select tallas__seleccion" aria-label="Tallas" required>
+                                <option selected>Tallas disponibles</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                            </select>
+                        </form>
+                        <div class="add">
+                            <button type="button" class="btn btn-dark add__btn">Añadir al carrito</button>
+                            <button type="button" class="btn btn-dark add__btn"><img src="../media/icons/favorites.svg" alt=""></button>
+                        </div> 
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
+    
     <footer>
         <nav class="footer">
             <div class="sub">
@@ -149,10 +181,13 @@
             </div>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
-</html>
 
+</html>

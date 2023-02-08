@@ -47,6 +47,9 @@
 
 
 }  
+.barra__recorrido{
+    padding-top: 50px;
+}
 
 @media screen and (max-width: 320px) ,(max-width: 768px) {
     
@@ -187,20 +190,35 @@
 
     /*RESPONSIVE BARRA NAVEGACION*/
 
-    .barra__buscar{
+    .search-box{ 
+        input{
+            width: 100%;
+            height: 30px;
+            background: rgb(255, 255, 255);
+            height: 40px;
+        }
+    }
+    #check:checked ~.search-box{
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
         display: flex;
-        flex-direction: row;
-        gap:5px;
-        padding: 0;
-    } 
-    
+        align-items: center;
+        justify-content:center;
+        transform: translateY(60px);
+    }
+
     .barra__recorrido{
         padding-top: 50px;
         &{
+        ul{
             li{
-                font-size: 14px;
+                font-size: 14x;
+                display: block;
             }
         }
+    }      
     }
 
     .animacion {
@@ -420,6 +438,26 @@
         grid-template-rows:1fr ;
             
     }
+/* RESPONSIVE PAGINA CALZADO HOMBRE Y MUJER*/
+.section_info{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.grid__producto{
+    display: flex;
+    flex-direction: column;
+}
+.grid__producto-6{  
+    top: 25%;
+    width: 200%;
+    &-name{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
 /* RESPONSIVE CONTACTO y USUARIO*/
 .formulario{
     &__info{
