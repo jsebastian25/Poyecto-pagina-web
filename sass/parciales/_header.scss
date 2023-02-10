@@ -159,7 +159,7 @@ ul.menu {
     position: relative;
     padding: 20px 20px 0px;
     font-family: $project-font;
-    font-size: 16px;
+    font-size: 14px;
     ul{
         display: flex;
         align-items: center;;
@@ -187,16 +187,6 @@ ul.menu {
     }
 }
 
-.filtro{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding-right: 20px;
-    gap:10px;
-    border: none;
-    background-color: $project-color-white;
-    
-}
 
 .main__inicio {
     margin: 4% auto 10px;

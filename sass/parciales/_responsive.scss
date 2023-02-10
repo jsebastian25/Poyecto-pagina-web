@@ -44,12 +44,8 @@
         font-weight: 600;
         padding-top: 20px;
     }
-
-
 }  
-.barra__recorrido{
-    padding-top: 50px;
-}
+
 
 @media screen and (max-width: 320px) ,(max-width: 768px) {
     
@@ -438,20 +434,36 @@
         grid-template-rows:1fr ;
             
     }
+    .filtro{
+        label{
+            padding-right: 0;
+        }
+        &__lista{
+            width: 100%;
+            label{
+                padding: 10px;
+                top: 60%;
+            }
+        }
+    }
 /* RESPONSIVE PAGINA CALZADO HOMBRE Y MUJER*/
 .section_info{
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
+    &-description{
+        width: 100%;
+    }
 }
 .grid__producto{
     display: flex;
     flex-direction: column;
 }
 .grid__producto-6{  
+    position: sticky;  
     top: 25%;
-    width: 200%;
+    width: 100%;
     &-name{
         font-size: 15px;
         font-weight: 600;

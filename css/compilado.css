@@ -131,7 +131,7 @@ ul.menu {
   position: relative;
   padding: 20px 20px 0px;
   font-family: "Montserrat" sans-serif;
-  font-size: 16px; }
+  font-size: 14px; }
   .barra__recorrido ul {
     display: flex;
     align-items: center;
@@ -146,15 +146,6 @@ ul.menu {
       color: silver; }
     .barra__recorrido ul li:last-child a {
       font-weight: 600; }
-
-.filtro {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  padding-right: 20px;
-  gap: 10px;
-  border: none;
-  background-color: #ffffff; }
 
 .main__inicio {
   margin: 4% auto 10px; }
@@ -580,8 +571,59 @@ hr {
 
 /*PÁGINA CALZADO HOMBRE Y MUJER*/
 .filtro {
-  padding-right: 50px;
-  padding-bottom: 20px; }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px; }
+  .filtro label {
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    padding-right: 10px;
+    gap: 8px; }
+    .filtro label img {
+      width: 20px; }
+  .filtro input {
+    display: none; }
+  .filtro__lista {
+    position: fixed;
+    right: 0;
+    top: 72px;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 1px 0.5px 4px #dbd4d4;
+    z-index: 50;
+    transition: all 0.3s ease;
+    transform: translateX(100%); }
+    .filtro__lista label {
+      position: relative;
+      top: 70%;
+      padding: 5px;
+      border: 1px solid black; }
+    .filtro__lista ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .filtro__seleccion {
+    border-radius: 0px;
+    padding: 14px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; }
+
+input:checked ~ .filtro__lista {
+  transform: translateX(0); }
 
 .calzado__lista {
   display: flex;
@@ -619,7 +661,8 @@ hr {
   color: black;
   border: none; }
 
-/*Pagina producto*/
+/*PAGINA PRODUCTOS
+Tanto en la sección de hombre como la de mujer la primera zapatilla se especifica en esta sección*/
 .section_info {
   position: relative;
   height: 100%;
@@ -639,7 +682,7 @@ hr {
   grid-template-areas: "grid__producto-1 grid__producto-1" "grid__producto-2 grid__producto-3" "grid__producto-4 grid__producto-5";
   gap: 8px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 60px;
   width: 100%;
   right: 0%; }
   .grid__producto img {
@@ -662,7 +705,10 @@ hr {
 .grid__producto-6 {
   position: sticky;
   top: 10%;
-  padding: 15px;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-bottom: 40px;
   width: 100%; }
   .grid__producto-6-name {
     display: flex;
@@ -676,7 +722,14 @@ hr {
 .tallas {
   margin-top: 20px; }
   .tallas__seleccion {
-    border-radius: 0px; }
+    border-radius: 0px;
+    padding: 14px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; }
+
+.form-select:focus {
+  border-color: #000000;
+  box-shadow: none; }
 
 .add {
   display: flex;
@@ -688,6 +741,34 @@ hr {
     width: 100%; }
   .add img {
     width: 25px; }
+
+.desplegable {
+  position: relative;
+  top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+  .desplegable__info {
+    border: none; }
+  .desplegable__btn {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; }
+  .desplegable__lista {
+    list-style: none;
+    padding: 0; }
+    .desplegable__lista li a:hover {
+      color: #9c9c9c; }
+
+/*Para poder cmabiar estos estilos de bootstrap fui al inspector de google, analicé como estaba contenido, copie la prpiedad y lo modifiqué*/
+.accordion-button:focus {
+  border-color: black;
+  box-shadow: none; }
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #ffffff;
+  box-shadow: none; }
 
 @media screen and (max-width: 1024px) {
   .menu {
@@ -720,9 +801,6 @@ hr {
     line-height: 60px;
     font-weight: 600;
     padding-top: 20px; } }
-
-.barra__recorrido {
-  padding-top: 50px; }
 
 @media screen and (max-width: 320px), (max-width: 768px) {
   .header {
@@ -959,18 +1037,28 @@ hr {
     gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr; }
+  .filtro label {
+    padding-right: 0; }
+  .filtro__lista {
+    width: 100%; }
+    .filtro__lista label {
+      padding: 10px;
+      top: 60%; }
   /* RESPONSIVE PAGINA CALZADO HOMBRE Y MUJER*/
   .section_info {
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column; }
+    .section_info-description {
+      width: 100%; }
   .grid__producto {
     display: flex;
     flex-direction: column; }
   .grid__producto-6 {
+    position: sticky;
     top: 25%;
-    width: 200%; }
+    width: 100%; }
     .grid__producto-6-name {
       font-size: 15px;
       font-weight: 600; }

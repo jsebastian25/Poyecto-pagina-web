@@ -1,4 +1,5 @@
-/*Pagina producto*/
+/*PAGINA PRODUCTOS
+Tanto en la sección de hombre como la de mujer la primera zapatilla se especifica en esta sección*/
 .section_info{
     position: relative;
     height: 100%;
@@ -25,7 +26,7 @@
         "grid__producto-4 grid__producto-5";
     gap: 8px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 60px;
     width: 100%;
     right: 0%;
 
@@ -58,7 +59,10 @@
     .grid__producto-6{  
         position: sticky;
         top: 10%;
-        padding:15px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 20px;
+        padding-bottom: 40px;
         width: 100%;
         &-name{
             display: flex;
@@ -76,7 +80,15 @@
         margin-top: 20px;
         &__seleccion{
             border-radius: 0px;
+            padding: 14px;
+            border-top: 1px solid $project-color-black;
+            border-bottom: 1px solid $project-color-black;
+          
         }
+    }
+    .form-select:focus {
+        border-color: #000000;
+        box-shadow: none;
     }
 
     .add{
@@ -93,5 +105,43 @@
             width: 25px;
         }
 }
+ .desplegable{
+    position: relative;
+    top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__info{
+        border: none;
+    }
+    &__btn{
+       border-top: 1px solid $project-color-black;
+       border-bottom: 1px solid $project-color-black;
+    }
+    &__lista{
+        list-style: none;
+        padding: 0;
+        li{
+            a{
+                &:hover{
+                color: rgb(156, 156, 156);
+                }
+            }
+        }    
+    }
+ }
+/*Para poder cmabiar estos estilos de bootstrap fui al inspector de google, analicé como estaba contenido, copie la prpiedad y lo modifiqué*/
+
+ .accordion-button:focus{
+    border-color: $project-color-black;
+    box-shadow: none;
+
+ }
+ .accordion-button:not(.collapsed){
+    color: $project-color-black;
+    background-color: $project-color-white;
+    box-shadow: none;
+ }
 
 
